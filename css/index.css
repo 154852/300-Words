@@ -1,0 +1,42 @@
+body {
+    overflow: hidden;
+}
+
+#bg {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -10;
+}
+
+#main {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#main.other-focus {
+    top: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+
+    font-size: 70%;
+}
+
+#main.other-focus p {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#main.other-focus p {
+    opacity: 0;
+}
+
+#search:focus {
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}

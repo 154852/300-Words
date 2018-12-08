@@ -1,0 +1,186 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 400%;
+    font-weight: 300;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.animation-loop {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+        overflow: hidden;
+    }
+
+    100% {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@keyframes blurIn {
+    0% {
+        filter: blur(5px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+.full-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0.3em;
+
+    border: solid transparent 1px;
+    box-shadow: rgb(230, 230, 230) 0 0 0px 1px;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+
+    padding: 1% 2%;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    font-weight: 300;
+}
+
+input:focus {
+    border: solid var(--theme) 1px;
+    font-size: 140%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.pass {
+    pointer-events: none !important;
+}
+
+a {
+    display: block;
+}
+
+.hr {
+    height: 1px;
+    background-color: rgb(233, 233, 233);
+    margin: 0 auto;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.button.light {
+    background-color: transparent;
+    border: solid var(--theme) 1px;
+    color: var(--theme);
+
+    font-weight: 300;
+}
+
+.button.light:hover {
+    background-color: var(--theme);
+    color: white;
+}
+
+.contenteditable {    
+    border-bottom: solid lightgray 1px;
+}
+
+.contenteditable, .large-contenteditable {
+    outline: none;
+    cursor: text;
+}
+
+.large-contenteditable {
+    border: solid lightgray 1px;
+    padding: 0.5em 1em;
+}
+
+.contenteditable:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: lightgray;
+    font-weight: 200;
+    text-align: center;
+}

@@ -1,0 +1,133 @@
+#search-results {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+
+    width: 100%;
+    overflow-y: scroll;
+
+    height: 70%;
+
+    pointer-events: all;
+}
+
+#search-results::-webkit-scrollbar { 
+    display: none; 
+}
+
+#search-results.active {
+    top: 30%;
+    transform: translate(-50%, -0%);
+}
+
+.search-result-inner > * {
+    display: inline;
+}
+
+.search-result:hover .search-result-inner {
+    right: 16%;
+}
+
+.search-result:hover::before {
+    right: calc(8% - 0.55em);
+}
+
+.search-result:hover::after {
+    right: 8%;
+}
+
+.search-result {
+    color: white;
+    position: relative;
+    height: 3em;
+    margin: 0.5em auto;
+
+    cursor: pointer;
+    width: 70%;
+}
+
+.search-result-inner {
+    padding: 0.5em 1em;
+    background-color: var(--theme);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    
+    transition: 0.5s;
+    -webkit-transition: 0.5s; 
+}
+
+.search-result-inner p, .search-result-inner span {
+    font-size: 70%;
+    font-weight: 300;
+}
+
+.search-result-inner h1 {
+    margin: 0;
+    font-size: 95%;
+    font-weight: 500;
+}
+
+.search-result::before {
+    content: '';
+    position: absolute;
+
+    width: 2em;
+    height: 2em;
+
+    top: 50%;
+    right: 16%;
+
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+
+    background-color: var(--theme);
+    border-radius: 50%;
+
+    z-index: -4;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.search-result::after {
+    content: '';
+    position: absolute;
+
+    width: 1em;
+    height: 1em;
+
+    top: 50%;
+    right: 16%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+
+    background-color: white;
+    -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 25% 100%, 75% 50%, 25% 0);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 25% 100%, 75% 50%, 25% 0);
+
+    z-index: -4;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#search {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+#search.content {
+    bottom: 70%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
