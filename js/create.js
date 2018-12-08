@@ -74,12 +74,14 @@ previewButton.addEventListener('click', function() {
 })
 
 document.querySelector('#publish').addEventListener('click', function() {
-    Utils.genForm({
-        title: document.querySelector('#title').innerText,
-        summary: coverContent.querySelector('#summary').innerText,
-        author: document.querySelector('#author span').innerText,
-        tags: coverContent.querySelector('#tags').replace(/ /g, '-').split(','),
-        id: document.querySelector('#title').innerText.toLowerCase().replace(/-/g, '_').replace(/[^a-z0-9]/g, ''),
-        content: document.querySelector('#main').innerText
-    }).submit();
+    const form = document.querySelector('form');
+
+    form.children[0].value = document.querySelector('#title').innerText;
+    form.children[1].value = document.querySelector('#summary').innerText;
+    form.children[2].value = document.querySelector('#author span').innerText;
+    form.children[3].value = document.querySelector('#tags').innerText.replace(/ /g, '-');
+    form.children[4].value = document.querySelector('#title').innerText.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9]/g, '');
+    form.children[5].value = document.querySelector('#main').innerText;
+
+    form.submit();
 });
