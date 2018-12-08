@@ -83,5 +83,5 @@ document.querySelector('#publish').addEventListener('click', function() {
     form.children[4].value = document.querySelector('#title').innerText.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9]/g, '');
     form.children[5].value = document.querySelector('#main').innerText;
 
-    form.querySelector('input[type=submit]').click();
+    form.children[6].click();
 });
