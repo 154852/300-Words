@@ -76,12 +76,12 @@ previewButton.addEventListener('click', function() {
 document.querySelector('#publish').addEventListener('click', function() {
     const form = document.querySelector('form');
 
-    form.children[0].value = document.querySelector('#title').innerText;
-    form.children[1].value = document.querySelector('#summary').innerText;
-    form.children[2].value = document.querySelector('#author span').innerText;
-    form.children[3].value = document.querySelector('#tags').innerText.replace(/ /g, '-');
-    form.children[4].value = document.querySelector('#title').innerText.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9]/g, '');
-    form.children[5].value = document.querySelector('#main').innerText;
+    form.children[1].value = document.querySelector('#title').innerText;
+    form.children[2].value = document.querySelector('#summary').innerText;
+    form.children[3].value = document.querySelector('#author span').innerText;
+    form.children[4].value = document.querySelector('#tags').innerText.replace(/ /g, '-');
+    form.children[5].value = document.querySelector('#title').innerText.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9]/g, '');
+    form.children[6].value = document.querySelector('#main').innerText;
 
-    form.children[6].click();
+    form.children[7].click();
 });
