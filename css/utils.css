@@ -208,3 +208,7 @@ a {
 .flex-keep {
     flex: 0 1 auto;
 }
+
+.white-bg {
+    background-color: white;
+}

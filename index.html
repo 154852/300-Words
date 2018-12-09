@@ -15,6 +15,17 @@
 
         <script src="js/utils.js"></script>
         <script src="lib/fuse.min.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96237384-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-96237384-4');
+        </script>
+
     </head>
     <body>
         <canvas id="bg"></canvas>
@@ -24,6 +35,9 @@
         </div>
         <input type="search" id="search" class="hidden" placeholder="Search..." />
         <div id="search-results"></div>
+
+        <a href="create.html" class="button light" style="position: fixed; top: 1em; left: 1em; width: auto">Publish Your Piece</a>
+        <p class="button light" style="position: fixed; top: 1em; right: 1em; width: auto" id="random">Random text</p>
     </body>
     <script src="js/index.js"></script>
 </html>
