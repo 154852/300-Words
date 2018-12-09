@@ -182,25 +182,8 @@ html, body {
     #arrow-left, #arrow-right {
         display: none;
     }
-
-    #mobile-scroll-pointer {
-        display: block !important;
-
-        position: absolute;
-        top: 94%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-
-        font-weight: 200;
-    }
-
+    
     .card .title {
         font-size: 8vw;
     }
-}
-
-#mobile-scroll-pointer {
-    display: none;
 }
