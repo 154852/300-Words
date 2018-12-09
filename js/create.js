@@ -5,7 +5,7 @@ const left = document.querySelector('#arrow-left');
 const right = document.querySelector('#arrow-right');
 
 function update() {
-    if (!Utils.mobileAndTabletcheck()) {
+    if (Utils.mobileAndTabletcheck()) {
         try {
             cardWheel.children[card].querySelector('.input').focus({preventScroll: true});
         } catch (ignore) {}
