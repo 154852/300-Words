@@ -11,6 +11,22 @@ body {
     white-space: pre-wrap;
 }
 
+#margin {
+    margin: 0 25%
+}
+
+@media only screen and (max-width: 900px) {
+    #margin {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #margin {
+        margin: 0 2%;
+    }
+}
+
 #title {
     text-align: center;
     font-size: 200%;

@@ -48,7 +48,7 @@ content.addEventListener('input', function() {
     md.innerHTML = Utils.MDtoHTML(content.innerText);
 })
 
-window.alert = (title, text) => {
+const warn = (title, text) => {
     const element = document.querySelector('#alert');
     element.querySelector('h2').innerText = title;
     element.querySelector('p').innerText = text;
@@ -61,6 +61,8 @@ document.querySelector('#alert .button').addEventListener('click', function() {
 
 document.querySelector('#publish').addEventListener('click', function() {
     const form = document.querySelector('form');
+
+    console.log('click')
 
     const data = {
         title: document.querySelector('*[name=title]').innerText,
@@ -78,23 +80,23 @@ document.querySelector('#publish').addEventListener('click', function() {
     form.children[6].value = data.content;
 
     if (data.title.length < 3 || data.title.length > 40) {
-        alert('Title is the wrong size...', 'Title names cannot be shorter than 3 characters or more than 40. Your current length is ' + data.title.length);
+        warn('Title is the wrong size...', 'Title names cannot be shorter than 3 characters or more than 40. Your current length is ' + data.title.length);
         return;
     }
 
     if (data.summary.length < 20 || data.summary.length > 150) {
-        alert('Summary is the wrong size...', 'Summaries cannot be shorter than 20 characters or more than 150. Your current length is ' + data.summary.length);
+        warn('Summary is the wrong size...', 'Summaries cannot be shorter than 20 characters or more than 150. Your current length is ' + data.summary.length);
         return;
     }
 
     if (data.author.length < 3 || data.author.length > 15) {
-        alert('Author name is the wrong size...', 'Author names cannot be shorter than 3 characters or more than 15. Your current length is ' + data.author.length);
+        warn('Author name is the wrong size...', 'Author names cannot be shorter than 3 characters or more than 15. Your current length is ' + data.author.length);
         return;
     }
     
     const words = data.content.split(' ').length;
     if (words < 250 || words > 400) {
-        alert('Content is the wrong size...', 'Your content cannot be shorter than 250 words or more than 400. Your current count is ' + data.content.length);
+        warn('Content is the wrong size...', 'Your content cannot be shorter than 250 words or more than 400. Your current count is ' + data.content.length);
         return;
     }
 

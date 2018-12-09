@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Markdown with 00 Words</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,300,200" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/utils.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" /> 
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96237384-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-96237384-4');
+        </script>
+
+        <style>
+            h1 {
+                margin: 0;
+                font-size: 300%;
+                font-weight: 500;
+                color: var(--theme);
+            }
+
+            p {
+                text-align: left;
+                margin-top: 0;
+            }
+
+            p, td {
+                font-weight: 200;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td, th {
+                width: 50%;
+                padding: 0.5em 0;
+            }
+
+            table tr:nth-child(odd) {
+                background-color: rgb(233, 233, 233);
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 80%; margin: 0 auto; text-align: center;">
+            <h1>Markdown.</h1>
+            <p>Markdown is a way of writing that allows you to style your text just a little bit. If you know HTML, it essentially allows you to do a simpler version of this.</p>
+
+            <table>
+                <tr>
+                    <th>Bold</th>
+                    <td>*text*</td>
+                </tr>
+                <tr>
+                    <th>Underline</th>
+                    <td>_text_</td>
+                </tr>
+                <tr>
+                    <th>Italics</th>
+                    <td>/text/</td>
+                </tr>
+                <tr>
+                    <th>Horizontal Line</th>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <th>Strikethrough</th>
+                    <td>-text-</td>
+                </tr>
+                <tr>
+                    <th>Small header</th>
+                    <td>###text</td>
+                </tr>
+                <tr>
+                    <th>Medium Header</th>
+                    <td>##text</td>
+                </tr>
+                <tr>
+                    <th>Large Header</th>
+                    <td>#text</td>
+                </tr>
+                <tr>
+                    <th>Bullet points</th>
+                    <td>+text</td>
+                </tr>
+                <tr>
+                    <th>Link</th>
+                    <td>(display text)[https://webaddress.com]</td>
+                </tr>
+                <tr>
+                    <th>Code Block</th>
+                    <td>```text```</td>
+                </tr>
+                <tr>
+                    <th>Code</th>
+                    <td>`text`</td>
+                </tr>
+                <tr>
+                    <th>Highlight</th>
+                    <td>::text::</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </body>
+</html>

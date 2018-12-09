@@ -155,13 +155,15 @@ body {
 
 #alert {
     position: fixed;
-    width: 60%;
-    height: 50%;
+    width: 60vw;
+    height: 50vh;
     background-color: white;
     box-shadow: lightgray 0 0 1px 1px;
 
     transition: 0.5s;
     -webkit-transition: 0.5s;
+
+    z-index: 999999999999999999;
 }
 
 #alert.hidden {

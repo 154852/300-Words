@@ -19,6 +19,20 @@ html, body {
     text-align: center;
 }
 
+.center-viewport {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    margin: 0;
+    text-align: center;
+}
+
 h1 {
     font-size: 400%;
     font-weight: 300;
