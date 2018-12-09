@@ -6,11 +6,7 @@
     transition: 0.5s;
     -webkit-transition: 0.5s;
 
-    /* display: inline; */
-
     width: 700vw;
-
-    /* overflow: hidden; */
 }
 
 .card {
@@ -18,7 +14,7 @@
     height: 95%;
     display: block;
     background-color: white;
-    box-shadow: lightgray 0 0 1px 1px;
+    box-shadow: var(--theme) 0 0 1px 1px;
     width: 86vw;
     margin: 0 7vw;
 
@@ -182,4 +178,25 @@
     #arrow-left, #arrow-right {
         display: none;
     }
+
+    #mobile-scroll-pointer {
+        display: block !important;
+
+        position: absolute;
+        top: 94%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+
+        font-weight: 200;
+    }
+
+    .card .title {
+        font-size: 8vw;
+    }
+}
+
+#mobile-scroll-pointer {
+    display: none;
 }
