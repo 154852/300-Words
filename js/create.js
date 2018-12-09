@@ -9,7 +9,7 @@ function update() {
         try {
             cardWheel.children[card].querySelector('.input').focus({preventScroll: true});
         } catch (ignore) {}
-    }
+    } else alert('ok')
     cardWheel.css('left', (card * -100) + 'vw');
 
     if (card == 0) {
