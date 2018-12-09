@@ -104,3 +104,5 @@ document.querySelector('#publish').addEventListener('click', function() {
 })
 
 if (Utils.mobileAndTabletcheck()) new Background(document.querySelector('#bg'));
+
+document.body.addEventListener('touchmove', (e) => e.preventDefault());
