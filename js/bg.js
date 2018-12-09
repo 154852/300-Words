@@ -43,7 +43,7 @@ class Color {
     }
 
     toString() {
-        return 'rgba(' + this.r + ',' + this.g + ',' + this.b + ',' + this.a + ')';
+        return 'rgba(' + parseInt(this.r) + ',' + parseInt(this.g) + ',' + parseInt(this.b) + ',' + this.a + ')';
     }
 }
 
@@ -64,7 +64,7 @@ class Polygon {
     }
 
     render(ctx, lightness) { 
-        ctx.fillStyle = this.baseColor.lighter(lightness);
+        ctx.fillStyle = this.baseColor.lighter(lightness).toString();
         ctx.strokeStyle = ctx.fillStyle;
 
         ctx.beginPath();
