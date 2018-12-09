@@ -5,9 +5,11 @@ const left = document.querySelector('#arrow-left');
 const right = document.querySelector('#arrow-right');
 
 function update() {
-    try {
-        cardWheel.children[card].querySelector('.input').focus({preventScroll: true});
-    } catch (ignore) {}
+    if (!Utils.mobileAndTabletcheck()) {
+        try {
+            cardWheel.children[card].querySelector('.input').focus({preventScroll: true});
+        } catch (ignore) {}
+    }
     cardWheel.css('left', (card * -100) + 'vw');
 
     if (card == 0) {
