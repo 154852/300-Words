@@ -5,7 +5,7 @@ const searchResults = document.querySelector('#search-results');
 const connection = new Utils.DataBaseConnection();
 
 connection.promise().then((value) => {
-    const book = value.find(Utils.queryString('book'));
+    const book = value.find(window.location.hash.slice(1));
     document.querySelector('#title').innerText = book.title;
     document.querySelector('#main').innerHTML = Utils.MDtoHTML(book.content);
     document.querySelector('#author').innerText = 'Written by ' + book.author;

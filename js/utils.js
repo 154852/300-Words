@@ -90,7 +90,7 @@ Utils.DataBaseConnection.generateSearchResults = function(element, results) {
             class: 'search-result',
             listeners: {
                 mousedown: () => {
-                    window.open('read.html?book=' + result.id, '_self');
+                    window.open('read.html#' + result.id, '_self');
                 }
             },
             parent: element,

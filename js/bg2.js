@@ -48,9 +48,10 @@ class Color {
 }
 
 class Polygon {
-    constructor(vertices, color) {
+    constructor(vertices) {
         this.vertices = vertices;
-        this.baseColor = color;
+        
+        this.start = Math.random() * 2 * Math.PI;
     }
 
     center() {
@@ -63,8 +64,10 @@ class Polygon {
         return average.divideScalar(this.vertices.length);
     }
 
-    render(ctx, lightness) { 
-        ctx.fillStyle = this.baseColor.lighter(lightness);
+    async render(ctx, time) { 
+        const bgComponent = (Math.sin(time + this.start) + 1) * 0.5 * 200;
+
+        ctx.fillStyle = new Color(255, bgComponent, bgComponent).toString();
         ctx.strokeStyle = ctx.fillStyle;
 
         ctx.beginPath();
@@ -106,7 +109,7 @@ class Background {
         this.setSize(this.getGraphicalSize());
         this.ctx = canvas.getContext('2d');
 
-        this.squareSize = new Point(50, 50);
+        this.squareSize = new Point(100, 100);
 
         const lines = [];
         for (let i = 0; i < (this.canvas.height / this.squareSize.y) + 2; i++) {
@@ -136,17 +139,16 @@ class Background {
         }
 
         const that = this;
-        document.body.addEventListener('mousemove', (event) => {
-            that.render(new Point(event.pageX * window.devicePixelRatio, event.pageY * window.devicePixelRatio));
-        });
+        setInterval(async () => {
+            that.render();
+        }, 50);
     }
 
-    render(mousepos) {
+    render() {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
         for (const polygon of this.polygons) {
-            const lightness = (polygon.center().distanceTo(mousepos) * 0.035) ** 3;
-            if (lightness < 200) polygon.render(this.ctx, lightness);
+            polygon.render(this.ctx, new Date().getTime() / 1000);
         }
     }
 

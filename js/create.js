@@ -100,3 +100,5 @@ document.querySelector('#publish').addEventListener('click', function() {
 
     form.children[7].click();
 })
+
+new Background(document.querySelector('#bg'));
