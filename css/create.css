@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 #cards {
     height: 95%;
     margin-top: 2.5%;
