@@ -62,8 +62,6 @@ document.querySelector('#alert .button').addEventListener('click', function() {
 document.querySelector('#publish').addEventListener('click', function() {
     const form = document.querySelector('form');
 
-    console.log('click')
-
     const data = {
         title: document.querySelector('*[name=title]').innerText,
         summary: document.querySelector('*[name=summary]').innerText,
@@ -103,4 +101,4 @@ document.querySelector('#publish').addEventListener('click', function() {
     form.children[7].click();
 })
 
-new Background(document.querySelector('#bg'));
+if (Utils.mobileAndTabletcheck()) new Background(document.querySelector('#bg'));

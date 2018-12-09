@@ -1,4 +1,4 @@
-const background = new Background(document.querySelector('#bg'));
+if (Utils.mobileAndTabletcheck()) new Background(document.querySelector('#bg'));
 
 const search = document.querySelector('#search');
 const main = document.querySelector('#main');
