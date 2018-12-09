@@ -3,50 +3,123 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Create from 300 Words</title>
+        <title>Create 300 Words</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,300,200" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,300,200" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="css/utils.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/create.css" />
+        <script src="js/bg2.js"></script>
 
         <script src="js/utils.js"></script>
     </head>
     <body>
-        <a id="home" href="/">Return to home</a>
-        <p id="preview">Preview</p>
-
-        <div class="full-fixed hidden" id="preview-cover">
-            <div style="overflow-y: scroll">
-                <h1 class="title"></h1>
-                <p class="author"></p>
-                <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
-                <div style="margin: 0 10%; font-weight: 200; white-space: pre-wrap;"></div>
-                <br /><br />
+        <!-- <canvas id="bg"></canvas> -->
+        <div id="arrow-left"></div>
+        <div id="arrow-right"></div>
+        <div id="cards" style="left: 0">
+            <div class="card">
+                <div class="flex-column">
+                    <div class="flex-keep">
+                        <h1 class="title">Your Title</h1>
+                        <p class="description">The title of your piece is the first thing that people see, and with no front cover for your text - it is up to the title to pull the reader in and actually get them to read what you have written.</p>
+                    </div>
+    
+                    <div class="flex-remaining">
+                        <h1 class="contenteditable input" contenteditable="true" placeholder="Something Amazing" name="title"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flex-column">
+                    <div class="flex-keep">
+                        <h1 class="title">A Summary</h1>
+                        <p class="description">When people find your text they want to know <em>something</em> about what goes on - don't reveal any big twists, but get the general idea of the text across. Consider it the blurb of your piece, it has to make people want to know more.</p>
+                    </div>
+    
+                    <div class="flex-remaining">
+                        <p class="contenteditable input" contenteditable="true" placeholder="When X does Y, Z happens." name="summary"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flex-column">
+                    <div class="flex-keep">
+                        <h1 class="title">Your Name</h1>
+                        <p class="description">It doesn't actually have to be <em>your</em> name, but it should be you. Your author name is how people find you specifically so it should be a common denominator. Make it clear, logical and suitable.</p>
+                    </div>
+    
+                    <div class="flex-remaining">
+                        <p class="contenteditable input" contenteditable="true" placeholder="Me." name="author"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flex-column">
+                    <div class="flex-keep">
+                        <h1 class="title">The Content</h1>
+                        <p class="description">This is your actual text, you have between 250 and 300 words to get across your message - to make the reader laugh or cry, to kill or to save lives (though not literally). You can use <a href="markdown.html">basic markdown</a>.</p>
+                    </div>
+    
+                    <div class="flex-remaining">
+                        <p class="contenteditable input" contenteditable="true" placeholder="Once upon a time..." style="text-align: left" name="content"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flex-column">
+                    <div class="flex-keep">
+                        <h1 class="title">The Preview</h1>
+                        <p class="description">With us letting you use markdown, it is only fair that you get to see what the full rendered product would be. This is it:</p>
+                    </div>
+    
+                    <div class="flex-remaining">
+                        <div id="md-html" class="input"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flex-column">
+                    <div class="flex-keep">
+                        <h1 class="title">Some Tags</h1>
+                        <p class="description">Try to pick 5 words, things that categorise your piece. People can and will find you by these tags - they are important and it is these that allow people to find you even if you have a strange title.</p>
+                    </div>
+    
+                    <div class="flex-remaining">
+                        <p class="contenteditable input" contenteditable="true" placeholder="Enter words separated by commas" name="tags"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flex-column">
+                    <div class="flex-keep">
+                        <h1 class="title">Publish</h1>
+                        <p class="description">When you press this button, there is no going back - you cannot stop your text from going online. Are you absolutely sure you are happy with what you have?</p>
+                    </div>
+    
+                    <div class="flex-remaining">
+                        <h3 class="button light center" style="width: 60%;" id="publish">Publish</h3>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <h1 id="title" class="contenteditable title" contenteditable="true" placeholder="What is the title of your text?"></h1>
-        <div style="margin: 0 25%">
-            <p id="author" class="author">Written by <span contenteditable="true" class="contenteditable" style="padding-bottom: 0.3em; width: 10em; display: inline-block; text-align: center" placeholder="you"></span></p>
-            <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
-            <p class="contenteditable" contenteditable="true" placeholder="Enter a summary for your story" style="padding-bottom: 0.5em; font-weight: 200" id="summary"></p> 
-            <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
-            <div id="main" class="contenteditable large-contenteditable" contenteditable="true" placeholder="Tell your story"></div>
-            <br />
-            <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
-            <br />
-            <p class="contenteditable" contenteditable="true" placeholder="Enter tags seperated by commas" style="padding-bottom: 0.5em" id="tags"></p>
+        <div id="alert" class="center hidden">
+            <div class="flex-column" style="height: 100%">
+                <div class="flex-keep">
+                    <h2></h2>
+                    <p></p>
+                </div>
+
+                <div class="flex-remaining" style="position: relative; height: 100%">
+                    <h3 class="button light center" style="width: 60%;">OK</h3>
+                </div>
+            </div>
         </div>
-        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-        <br />
-        <div class="button light" id="publish">Publish your story</div>
-        <br />
     </body>
     <script src="js/create.js"></script>
-
-    <form method="GET" name="publish" style="display: none" netlify action="/">
+    <form method="GET" name="publish" style="display: none" netlify action="confirm.html">
         <input type="text" name="title" />
         <input type="text" name="summary" />
         <input type="text" name="author" />

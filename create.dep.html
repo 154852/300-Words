@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Create from 300 Words</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,300,200" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" media="screen" href="css/utils.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/create.css" />
+
+        <script src="js/utils.js"></script>
+    </head>
+    <body>
+        <a id="home" href="/">Return to home</a>
+        <p id="preview">Preview</p>
+
+        <div class="full-fixed hidden" id="preview-cover">
+            <div style="overflow-y: scroll">
+                <h1 class="title"></h1>
+                <p class="author"></p>
+                <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
+                <div style="margin: 0 10%; font-weight: 200; white-space: pre-wrap;"></div>
+                <br /><br />
+            </div>
+        </div>
+
+        <h1 id="title" class="contenteditable title" contenteditable="true" placeholder="What is the title of your text?"></h1>
+        <div style="margin: 0 25%">
+            <p id="author" class="author">Written by <span contenteditable="true" class="contenteditable" style="padding-bottom: 0.3em; width: 10em; display: inline-block; text-align: center" placeholder="you"></span></p>
+            <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
+            <p class="contenteditable" contenteditable="true" placeholder="Enter a summary for your story" style="padding-bottom: 0.5em; font-weight: 200" id="summary"></p> 
+            <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
+            <div id="main" class="contenteditable large-contenteditable" contenteditable="true" placeholder="Tell your story"></div>
+            <br />
+            <div class="hr" style="width: 90%; margin-bottom: 1em"></div>
+            <br />
+            <p class="contenteditable" contenteditable="true" placeholder="Enter tags seperated by commas" style="padding-bottom: 0.5em" id="tags"></p>
+        </div>
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+        <br />
+        <div class="button light" id="publish">Publish your story</div>
+        <br />
+    </body>
+    <script src="js/create.js"></script>
+
+    <form method="GET" name="publish" style="display: none" netlify action="confirm.html">
+        <input type="text" name="title" />
+        <input type="text" name="summary" />
+        <input type="text" name="author" />
+        <input type="text" name="tags" />
+        <input type="text" name="id" />
+        <input type="text" name="content" />
+        <input type="submit" value="submit" />
+    </form>
+</html>

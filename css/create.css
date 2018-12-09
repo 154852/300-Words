@@ -1,106 +1,168 @@
 body {
-    background-color: rgb(248, 248, 248);
-    animation-name: blurIn;
-    animation-duration: 1.5s;
+    overflow: hidden;
 }
 
-#main {
-    font-size: 110%;
-    font-weight: 300;
-    padding-bottom: 0.5em;
+#cards {
+    height: 95%;
+    margin-top: 2.5%;
+    position: absolute;
 
-    color: black;
-    white-space: pre-wrap;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+
+    /* display: inline; */
+
+    width: 9999999%;
+
+    /* overflow: hidden; */
+}
+
+.card {
+    float: left;
+    height: 95%;
+    display: block;
+    background-color: white;
+    box-shadow: lightgray 0 0 1px 1px;
+    width: 86vw;
+    margin: 0 7vw;
+
+    z-index: 100;
+}
+
+.card .title {
+    text-align: center;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.card .description {
+    margin: 0 5em;
+    text-align: center;
+}
+
+.card p.input {
+    font-weight: 200;
     font-size: 100%;
 }
 
-.title {
-    text-align: center;
-    font-size: 200%;
-    font-weight: 300;
-    margin-top: 0;
-    padding-top: 1em;
-
-    padding-bottom: 0.5em;
-    margin: 0 auto;
-    width: 70%;
-}
-
-.author {
-    text-align: right;
+.card a {
+    display: inline;
     color: var(--theme);
-}
-
-#home:hover, #preview:hover {
-    filter: brightness(10%);
-}
-
-#home {
-    z-index: 1000009;
-
-    position: fixed;
-    top: 0.5em;
-    left: 0.5em;
-    font-weight: 200;
-
-    color: lightgray;
-
-    cursor: pointer;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-
+    font-weight: 500;
     text-decoration: none;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
-#preview {
-    z-index: 1000009;
+.card a:hover {
+    filter: brightness(200%);
+}
 
-    position: fixed;
-    top: 0.5em;
-    right: 0.5em;
-    font-weight: 200;
+.card .input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.2em 0;
+    text-align: center;
 
-    color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    color: black !important;
+
+    max-height: 95%;
+    overflow-y: scroll;
+}
+
+.card .flex-remaining {
+    height: 100%;
+    position: relative;
+}
+
+.card .flex-column {
+    height: 100%;
+}
+
+#arrow-left {
+    left: 3.5vw;
+
+    transform: translate(-50%, -50%) rotate(180deg);
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#arrow-right {
+    left: 96.5vw;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#arrow-left, #arrow-right {
+    position: absolute;
+    top: 50%;
+
+    width: 2em;
+    height: 2em;
+
+    background-color: var(--theme);
+    border-radius: 50%;
+
+    z-index: 50;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 
     cursor: pointer;
+}
+
+#arrow-left:hover, #arrow-right:hover {
+    filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+}
+
+#arrow-left::after, #arrow-right::after {
+    content: '';
+    position: absolute;
+
+    width: 1em;
+    height: 1em;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+
+    background-color: white;
+    -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 25% 100%, 75% 50%, 25% 0);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 25% 100%, 75% 50%, 25% 0);
+
+    z-index: 50;
     transition: 0.5s;
     -webkit-transition: 0.5s;
-
-    margin-top: 0;
 }
 
-.contenteditable {
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-}
-
-.contenteditable:focus {
-    border-bottom: solid var(--theme) 1px;
-}
-
-.large-contenteditable:focus {
-    border: solid var(--theme) 1px;
-}
-
-#preview-cover {
-    background-color: rgba(255, 255, 255, 0.7);
-
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-}
-
-#preview-cover.hidden {
+#arrow-left.grey, #arrow-right.grey {
     opacity: 0;
     pointer-events: none;
 }
 
-#preview-cover > div {
-    background-color: white;
-    margin: 0 auto;
-    width: 70%;
-    height: 98%;
-    box-shadow: lightgray 0 0 1px 1px;
-    margin-top: 2%;
+#md-html {
+    text-align: left;
+}
 
-    padding: 0 1em;
+#alert {
+    position: fixed;
+    width: 60%;
+    height: 50%;
+    background-color: white;
+    box-shadow: lightgray 0 0 1px 1px;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#alert.hidden {
+    opacity: 0;
+    pointer-events: none;
 }

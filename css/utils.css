@@ -170,6 +170,9 @@ a {
 .contenteditable, .large-contenteditable {
     outline: none;
     cursor: text;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .large-contenteditable {
@@ -183,4 +186,25 @@ a {
     color: lightgray;
     font-weight: 200;
     text-align: center;
+}
+
+.contenteditable:focus {
+    border-bottom: solid var(--theme) 1px;
+}
+
+.large-contenteditable:hover {
+    border: solid var(--theme) 1px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-remaining {
+    flex: 1 1 auto;
+}
+
+.flex-keep {
+    flex: 0 1 auto;
 }
