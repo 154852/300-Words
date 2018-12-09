@@ -11,9 +11,9 @@
     width: 100%;
     overflow-y: scroll;
 
-    height: 70%;
-
     pointer-events: all;
+
+    height: 0;
 }
 
 #search-results::-webkit-scrollbar { 
@@ -23,6 +23,7 @@
 #search-results.active {
     top: 30%;
     transform: translate(-50%, -0%);
+    height: 70%;
 }
 
 .search-result-inner > * {

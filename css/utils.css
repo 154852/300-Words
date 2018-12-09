@@ -106,9 +106,17 @@ h1 {
     height: 100%;
 }
 
+@media only screen and (max-width: 700px) {
+    input {
+        background-color: rgba(236, 236, 236, 0.6) !important;
+        box-shadow: rgb(209, 209, 209) 0 0 0px 1px !important;
+    }
+}
+
 input {
     outline: none;
     background-color: rgba(255, 255, 255, 0.6);
+    /* border-radius: 0.3em; */
     border-radius: 0.3em;
 
     border: solid transparent 1px;
@@ -126,6 +134,8 @@ input {
     transition: 0.5s;
     -webkit-transition: 0.5s;
     font-weight: 300;
+
+    -webkit-appearance: none;
 }
 
 input:focus {
