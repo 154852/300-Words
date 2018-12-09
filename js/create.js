@@ -103,4 +103,4 @@ document.querySelector('#publish').addEventListener('click', function() {
     form.children[7].click();
 })
 
-if (Utils.mobileAndTabletcheck()) new Background(document.querySelector('#bg'));
+new Background(document.querySelector('#bg'));

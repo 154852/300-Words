@@ -141,7 +141,7 @@ class Background {
         const that = this;
         setInterval(async () => {
             that.render();
-        }, 50);
+        }, Utils.mobileAndTabletcheck()? 50:100);
     }
 
     render() {

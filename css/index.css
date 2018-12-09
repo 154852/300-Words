@@ -35,7 +35,7 @@ body {
     opacity: 0;
 }
 
-#search:focus {
+#search:focus, #search.focused {
     bottom: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);

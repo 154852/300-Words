@@ -22,7 +22,19 @@ function update() {
     }
 }
 
-search.addEventListener('focus', function() {
+let allow = false;
+search.addEventListener('focus', function(event) {
+    if (!Utils.mobileAndTabletcheck() && !allow) {
+        search.blur();
+        setTimeout(() => {
+            search.focus();
+            search.classList.remove('focused');
+        }, 600);
+        search.classList.add('focused');
+
+        allow = true;
+    } else allow = false;
+
     main.classList.add('other-focus');
     update();
 
@@ -33,6 +45,7 @@ search.addEventListener('focus', function() {
 search.addEventListener('blur', function() {
     main.classList.remove('other-focus');
 
+    search.classList.remove('focused');
     search.classList.remove('content');
     searchResults.classList.remove('active');
 
