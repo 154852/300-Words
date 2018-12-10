@@ -212,6 +212,14 @@ a {
     text-align: center;
 }
 
+.contenteditable::-webkit-scrollbar { 
+    display: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
 .contenteditable:focus {
     border-bottom: solid var(--theme) 1px;
 }
