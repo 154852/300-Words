@@ -145,7 +145,7 @@ class Background {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
         for (const polygon of this.polygons) {
-            const lightness = (polygon.center().distanceTo(mousepos) * 0.035) ** 3;
+            const lightness = (polygon.center().distanceTo(mousepos) * 0.035) ** 4;
             if (lightness < 200) polygon.render(this.ctx, lightness);
         }
     }
