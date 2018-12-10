@@ -62,22 +62,14 @@ document.querySelector('#alert .button').addEventListener('click', function() {
 })
 
 document.querySelector('#publish').addEventListener('click', function() {
-    const form = document.querySelector('form');
-
     const data = {
         title: document.querySelector('*[name=title]').innerText,
         summary: document.querySelector('*[name=summary]').innerText,
         author: document.querySelector('*[name=author]').innerText,
         tags: document.querySelector('*[name=tags]').innerText.replace(/ /g, '-').replace(/-,/g, ',').replace(/,-/g, ','),
         content: document.querySelector('*[name=content]').innerText
-    }
-
-    form.children[1].value = data.title;
-    form.children[2].value = data.summary;
-    form.children[3].value = data.author;
-    form.children[4].value = data.tags;
-    form.children[5].value = data.title.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9]/g, '');
-    form.children[6].value = data.content;
+    };
+    data.id = data.title.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9]/g, '')
 
     if (data.title.length < 3 || data.title.length > 40) {
         warn('Title is the wrong size...', 'Title names cannot be shorter than 3 characters or more than 40. Your current length is ' + data.title.length);
@@ -100,7 +92,29 @@ document.querySelector('#publish').addEventListener('click', function() {
         return;
     }
 
-    form.children[7].click();
+    if (localStorage.sent != null) {
+        const obj = JSON.stringify(localStorage.sent);
+        obj.push(data);
+        localStorage.sent = JSON.stringify(obj);
+    } else {
+        localStorage.sent = JSON.stringify([data]);
+    }
+
+    if (window.location.host.indexOf('netlify') != -1) {
+        const form = document.querySelector('form');
+
+        form.children[1].value = data.title;
+        form.children[2].value = data.summary;
+        form.children[3].value = data.author;
+        form.children[4].value = data.tags;
+        form.children[5].value = data.id;
+        form.children[6].value = data.content;
+
+        form.children[7].click();
+    } else {
+        window.open('mailto:louisemileploix@icloud.com?subject=Publish: ' + encodeURIComponent(data.title) + '&body=' + encodeURIComponent(JSON.stringify(data)), '_top');
+        setTimeout(() => window.open('confirm.html', '_self'), 1000);
+    }
 })
 
 new Background(document.querySelector('#bg'));

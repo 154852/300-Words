@@ -9,11 +9,62 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,300,200" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" media="screen" href="css/utils.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+
+        <script>
+            function retry() {
+                let data = JSON.parse(localStorage.sent);
+                data = data[data.length - 1];
+
+                if (window.location.host.indexOf('netlify') != -1) {
+                    const form = document.querySelector('form');
+
+                    form.children[1].value = data.title;
+                    form.children[2].value = data.summary;
+                    form.children[3].value = data.author;
+                    form.children[4].value = data.tags;
+                    form.children[5].value = data.id;
+                    form.children[6].value = data.content;
+
+                    form.children[7].click();
+                } else {
+                    window.open('mailto:louisemileploix@icloud.com?subject=Publish: ' + encodeURIComponent(data.title) + '&body=' + encodeURIComponent(JSON.stringify(data)), '_top');
+                }
+            }
+        </script>
+
+        <style>
+            a {
+                color: var(--theme);
+                font-weight: 500;
+                display: inline;
+                cursor: pointer;
+
+                transition: 0.5s;
+                -webkit-transition: 0.5s;
+            }
+
+            a:hover {
+                filter: brightness(200%);
+                -webkit-filter: brightness(200%);
+            }
+        </style>
     </head>
     <body>
         <div class="center" style="animation: 3s fadeIn">
             <h1 style="color: var(--theme); font-weight: 500; margin: 0 auto">Complete!</h1>
             <p style="margin-top: 0.5em">Your text has been sent for publishing, but adding it may take up to 12 hours.</p>
+
+            <br />
+            <p>Message failed to send? Click <a onclick="retry()">here</a> to try again.</p>
         </div>
+        <form method="POST" name="topublish" style="display: none" netlify action="confirm.html">
+            <input type="text" name="title" />
+            <input type="text" name="summary" />
+            <input type="text" name="author" />
+            <input type="text" name="tags" />
+            <input type="text" name="id" />
+            <input type="text" name="content" />
+            <input type="submit" value="submit" />
+        </form>
     </body>
 </html>
