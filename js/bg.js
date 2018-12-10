@@ -106,7 +106,7 @@ class Background {
         this.setSize(this.getGraphicalSize());
         this.ctx = canvas.getContext('2d');
 
-        this.squareSize = new Point(50, 50);
+        this.squareSize = new Point(30, 30);
 
         const lines = [];
         for (let i = 0; i < (this.canvas.height / this.squareSize.y) + 2; i++) {
