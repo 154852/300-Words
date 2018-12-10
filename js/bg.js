@@ -114,9 +114,9 @@ class Background {
         this.setSize(this.getGraphicalSize());
         this.ctx = canvas.getContext('2d');
 
-        this.squareSize = new Point(30, 30);
+        this.squareSize = new Point(40, 40);
 
-        const base = Color.fromString(localStorage.theme);
+        const base = Color.fromString(localStorage.theme || 'rgb(255, 0, 0)');
 
         const lines = [];
         for (let i = 0; i < (this.canvas.height / this.squareSize.y) + 2; i++) {
@@ -132,13 +132,13 @@ class Background {
                     line[x - (l % 2) + 1],
                     lines[l - 1][x],
                     lines[l - 1][x + 1]
-                ], base.lighter(Math.random() * 80)));
+                ], base.lighter(Math.random() * 40)));
                 
                 this.polygons.push(new Polygon([
                     line[x],
                     line[x - 1],
                     lines[l - 1][x + (l % 2) - 1]
-                ], base.lighter(Math.random() * 80)));
+                ], base.lighter(Math.random() * 40)));
             }
         }
 
