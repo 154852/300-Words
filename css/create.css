@@ -112,7 +112,7 @@ html, body {
 
     cursor: pointer;
 
-    box-shadow: white 0px 0px 1px 0px;
+    /* box-shadow: white 0px 0px 1px 0px; */
 }
 
 #arrow-left:hover, #arrow-right:hover {
@@ -168,12 +168,12 @@ html, body {
 }
 
 #bg {
-    height: 100%;
-    width: 100%;
+    height: calc(100% + 170px);
+    width: calc(100% + 170px);
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -100px;
+    left: -100px;
 
     z-index: -10;
 }

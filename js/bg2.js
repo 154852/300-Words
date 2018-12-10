@@ -45,6 +45,14 @@ class Color {
     toString() {
         return 'rgba(' + parseInt(this.r) + ',' + parseInt(this.g) + ',' + parseInt(this.b) + ',' + this.a + ')';
     }
+
+    randomise(range) {
+        return new Color(this.r + ((Math.random() - 0.5) * range * 2), this.g + ((Math.random() - 0.5) * range * 2), this.b + ((Math.random() - 0.5) * range * 2), this.a);
+    }
+}
+Color.fromString = function(string) {
+    string = string.replace(/[^0-9,]/g, '').split(',');
+    return new Color(parseInt(string[0]), parseInt(string[1]), parseInt(string[2]));
 }
 
 class Polygon {
@@ -64,10 +72,10 @@ class Polygon {
         return average.divideScalar(this.vertices.length);
     }
 
-    async render(ctx, time) { 
-        const bgComponent = (Math.sin(time + this.start) + 1) * 0.5 * 200;
+    async render(ctx, time, base) { 
+        const color = base.lighter(Math.sin(this.start + time) * 55);
 
-        ctx.fillStyle = new Color(255, bgComponent, bgComponent).toString();
+        ctx.fillStyle = color.toString();
         ctx.strokeStyle = ctx.fillStyle;
 
         ctx.beginPath();
@@ -109,32 +117,31 @@ class Background {
         this.setSize(this.getGraphicalSize());
         this.ctx = canvas.getContext('2d');
 
-        this.squareSize = new Point(90, 90);
+        this.squareSize = new Point(150, 150);
+
+        this.base = Color.fromString(localStorage.theme);
 
         const lines = [];
         for (let i = 0; i < (this.canvas.height / this.squareSize.y) + 2; i++) {
-            lines.push(_genLine((this.canvas.width / this.squareSize.x) + 1, this.squareSize.x, i * this.squareSize.y, i % 2 != 0? 0:(this.squareSize.x / -2)));
+            lines.push(_genLine((this.canvas.width / this.squareSize.x) + 3, this.squareSize.x, i * this.squareSize.y, i % 2 != 0? 0:(this.squareSize.x / -2)));
         }
 
         this.polygons = [];
         for (let l = 1; l < lines.length - 1; l++) {
             const line = lines[l];
 
-            for (let x = 1; x < line.length - 1; x++) {
-                let color = (Math.random() * 200) + 50;
-
+            for (let x = 1; x < line.length - 1; x++) {;
                 this.polygons.push(new Polygon([
                     line[x - (l % 2) + 1],
                     lines[l - 1][x],
                     lines[l - 1][x + 1]
-                ], new Color(255, color, color)));
+                ]));
                 
-                color = (Math.random() * 155) + 70;
                 this.polygons.push(new Polygon([
                     line[x],
                     line[x - 1],
                     lines[l - 1][x + (l % 2) - 1]
-                ], new Color(255, color, color)));
+                ]));
             }
         }
 
@@ -148,7 +155,7 @@ class Background {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
         for (const polygon of this.polygons) {
-            polygon.render(this.ctx, new Date().getTime() / 1000);
+            polygon.render(this.ctx, new Date().getTime() / 1000, this.base);
         }
     }
 
