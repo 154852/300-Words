@@ -96,7 +96,7 @@ document.querySelector('#publish').addEventListener('click', function() {
     
     const words = data.content.split(' ').length;
     if (words < 250 || words > 400) {
-        warn('Content is the wrong size...', 'Your content cannot be shorter than 250 words or more than 400. Your current count is ' + words.length);
+        warn('Content is the wrong size...', 'Your content cannot be shorter than 250 words or more than 400. Your current count is ' + words);
         return;
     }
 
