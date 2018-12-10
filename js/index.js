@@ -1,4 +1,5 @@
-const themes = ['rgb(231, 76, 60)', 'rgb(231, 76, 60)', 'rgb(231, 76, 60)', 'rgb(13, 71, 161)', 'rgb(103, 58, 183)', 'rgb(81, 90, 90)']; //, 'rgb(142, 68, 173)', 'rgb(36, 113, 163)'
+// const themes = ['rgb(231, 76, 60)', 'rgb(231, 76, 60)', 'rgb(231, 76, 60)', 'rgb(13, 71, 161)', 'rgb(103, 58, 183)', 'rgb(81, 90, 90)']; //, 'rgb(142, 68, 173)', 'rgb(36, 113, 163)'
+const themes = ['rgb(231, 76, 60)'];
 localStorage.theme = themes[parseInt(Math.random() * themes.length)];
 document.body.style.setProperty('--theme', localStorage.theme);
 
