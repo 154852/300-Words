@@ -56,10 +56,6 @@ Utils.DataBaseConnection = class {
                         weight: 0.3
                     },
                     {
-                        name: 'title',
-                        weight: 0.8
-                    },
-                    {
                         name: 'author',
                         weight: 0.6
                     }
