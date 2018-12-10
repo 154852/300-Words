@@ -185,11 +185,11 @@ html, body {
     
     .card {
         width: 98vw;
-        margin: 0 2vw;
+        margin: 0 1vw;
     }
     
     #arrow-left, #arrow-right {
-        top: 98vw;
+        top: 98vw !important;
     }
     
     #arrow-left {
