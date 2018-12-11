@@ -139,7 +139,7 @@ input {
 }
 
 input:focus {
-    border: solid var(--theme) 1px;
+    border: solid rgb(231, 76, 60) 1px;
     font-size: 140%;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -176,14 +176,14 @@ a {
 
 .button.light {
     background-color: transparent;
-    border: solid var(--theme) 1px;
-    color: var(--theme);
+    border: solid rgb(231, 76, 60) 1px;
+    color: rgb(231, 76, 60);
 
     font-weight: 300;
 }
 
 .button.light:hover {
-    background-color: var(--theme);
+    background-color: rgb(231, 76, 60);
     color: white;
 }
 
@@ -221,11 +221,11 @@ input::-ms-clear {
 }
 
 .contenteditable:focus {
-    border-bottom: solid var(--theme) 1px;
+    border-bottom: solid rgb(231, 76, 60) 1px;
 }
 
 .large-contenteditable:hover {
-    border: solid var(--theme) 1px;
+    border: solid rgb(231, 76, 60) 1px;
 }
 
 .flex-column {

@@ -55,7 +55,7 @@
 
 .search-result-inner {
     padding: 0.5em 1em;
-    background-color: var(--theme);
+    background-color: rgb(231, 76, 60);
     position: absolute;
     top: 50%;
     right: 0;
@@ -93,7 +93,7 @@
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 
-    background-color: var(--theme);
+    background-color: rgb(231, 76, 60);
     border-radius: 50%;
 
     z-index: -4;
