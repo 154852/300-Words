@@ -274,7 +274,7 @@ Utils.MDtoHTML = function(string) {
 
     string = string.replaceRegex(/::([^:]+)::/gm, '<span class="highlight">$1</span>');
 
-    return string.replace(/\n/g, '<br>');
+    return string.replace(/\\n/g, '<br>');
 }
 
 Utils.mobileAndTabletcheck = function() {
