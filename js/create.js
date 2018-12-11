@@ -93,7 +93,7 @@ document.querySelector('#publish').addEventListener('click', function() {
     }
 
     if (localStorage.sent != null) {
-        const obj = JSON.stringify(localStorage.sent);
+        const obj = JSON.parse(localStorage.sent);
         obj.push(data);
         localStorage.sent = JSON.stringify(obj);
     } else {
