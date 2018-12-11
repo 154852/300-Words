@@ -54,7 +54,3 @@ search.addEventListener('blur', function() {
 });
 
 search.addEventListener('input', update);
-
-document.querySelector('#random').addEventListener('click', function() {
-    window.open('read.html#' + connection.data[parseInt(Math.random() * connection.data.length)].id, '_self');
-})
