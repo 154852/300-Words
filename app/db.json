@@ -1,17 +1,5 @@
 [
     {
-        "title": "Some Testing File",
-        "summary": "This is a text with nearly no content to it, it exists just to test things with.",
-        "tags": [
-            "test",
-            "file",
-            "small"
-        ],
-        "content": "#Chapter 1\nLorem ipsum dolor sit amet, \n ##Chapter 2\n consectetur adipiscing elit. \n###Chapter 3\nDonec rhoncus justo turpis, sed\n+point\n+point2\n aliquet libero sollicitudin et. Proin at enim a est laoreet \n---\nsollicitudin vitae ac ante. Vivamus eu fringilla justo. Donec interdum euismod tortor, id faucibus ante *egestas* id. Class aptent _taciti_ sociosqu ad litora /torquent/ per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Curabitur mattis, eros vitae tincidunt laoreet, eros mauris imperdiet mi, faucibus porta tortor lectus vel (metus)[https://google.com]. Maecenas lacinia in neque a gravida. Fusce porttitor nunc lectus, eget ::consequat:: orci tristique at. Fusce vestibulum auctor libero id `pretium`. Sed vitae dui finibus, vulputate elit pharetra, tempor metus.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas sodales ullamcorper tempus. Cras -ullamcorper- quam id enim semper eleifend ut sed libero. Integer convallis eleifend efficitur. \n```Sed facilisis nisl quis erat laoreet, eu faucibus lorem facilisis. Suspendisse tempus cursus augue vel finibus. Donec ultricies euismod risus, et cursus odio. ```\nVestibulum dignissim nec leo et facilisis. Integer at augue mollis, pulvinar tellus vel, blandit neque. Aliquam nisl justo, condimentum eget nisi a, ultricies malesuada sem. Donec tincidunt magna ipsum, at vehicula mi dictum eu. Suspendisse faucibus tempor aliquam. Morbi interdum lectus id accumsan imperdiet. In eget mi ultrices, lacinia ligula sed, vulputate est. Nulla maximus metus in justo convallis porta.\n\nInteger convallis leo eu odio pretium, vel vulputate erat facilisis. In sit amet vehicula elit, nec imperdiet risus. Nulla commodo, neque ac accumsan iaculis, lectus quam sollicitudin mi, id aliquet velit dui sed mauris. Praesent at velit lectus. Mauris mi lacus, fermentum ac gravida a, sagittis vel erat. Donec laoreet mauris blandit elit pretium, vel ornare nulla tincidunt. Morbi lobortis lorem ante, posuere viverra dui finibus quis. Donec laoreet eget libero ac pulvinar. Morbi nec sem id eros pellentesque ultrices eget eu sapien. Vestibulum nibh quam, porta sit amet eros at, scelerisque sagittis tellus. Nam tristique tristique leo, vitae dictum enim vehicula id. In tristique urna quis ligula egestas, nec pellentesque lacus hendrerit. Morbi sit amet venenatis diam. Praesent ornare ligula quis rutrum auctor. Pellentesque et orci vitae justo imperdiet pellentesque nec quis risus. Etiam sed turpis nibh.",
-        "author": "The Bot.",
-        "id": "test"
-    },
-    {
         "title": "A Loved Man Has Died",
         "summary": "A look into the tragedy that blots the history of Leicester City from a personal view as the legacy of Vichai Srivaddhanaprabha.",
         "author": "Roan Clawson",
@@ -30,7 +18,11 @@
         "summary": "It’s a normal day on the beach except everyone is probably gonna die",
         "author": "Jeremy Kyle",
         "tags": [
-            "Beach-children-chicken-barbecue-gone"
+            "Beach",
+            "children",
+            "chicken",
+            "barbecue",
+            "gone"
         ],
         "id": "chickenonthebarby",
         "content": "Meat sizzled on the barbecue, wafting the enticing scent down the beach, swept by the winds which wrapped around the coast. Though they were not cold winds, instead warm gentle winds, bringing calm and serenity into the bay satisfying the children that played all day long. No parents to tell them to leave. They didn’t notice and they didn’t care, children were oblivious at the best time and the gentle lapping waves were more than a distraction. So they played and played, oblivious to the absence of their elders.Many hours had passed and the children began to grow hungry, it didn’t take a lot to distract these children, but we already knew that, and it didn’t take long for them to notice the meat cooking back on shore, so off they went splashing the gentle waters and soon padding along soft golden sand, that sparked in the sunlight. There was no parents to tell them to stop eating, so they didn’t. They gobbled it down in minutes, all their tiny mouths chomping down on the meat. Meat. They weren’t sure what the meat was, but it tasted like chicken and it tasted good. So they gobbled it all down and emptied the barbecue, not a care in the world, no parents to tell them to stop. Satisfied they lied down on the beach, the soft sand surrounding them and sucking them into a sleep so good they didn’t wake up. All people knew was there was no children or parents there when the police turned up just footprints and more meat cooking on the barbecue. It tasted like chicken, but it really wasn’t..."
@@ -68,7 +60,7 @@
             "burn",
             "school",
             "Graye",
-            " teacher"
+            "teacher"
         ],
         "id": "scarred",
         "content": "Her eyes were like the sea, deep and unknown, unblinkingly fixed on the empty board. When you looked at them, you could see her thoughts drowning out her mind. Her thick hair was dyed a raven black and spiralled down to her bony waist. Her skin, which was as pale as the clouds that hung in the grey sky, looked as if it has been stretched around her head, her skull straining to be released from the prison that was her body. Her lips were the only bright thing about her, and shone from her face like a torch. But when you first meet Ayala, your eyes are drawn immediately to a large burn-mark which streaks through her otherwise clear skin. It leads in an A shape, about 8cm long from her left ear to the bridge of her nose, cutting through her thin face. No one knew how Ayala had got the burn, in fact no one knew anything much about her at all. The only person she seemed to have any kind of connection with was Mr Graye, our history teacher. Mr Graye was the kind of teacher who couldn’t stand bad students. He was very strict and anyone who didn't get an A in his tests would get a warning. If you got two warnings he would see you at the end of school ‘for a punishment’. However, people wanted to avoid this at all costs so the behaviour was usually good in his classes. It was just Ayala who sat at the back and stared at the board instead of working. If you watched closely, when he looked at her you could see his eyes lock with hers and a silent conversation would pass between them. A tension as thick as her hair hung in the air, broken only by the piercing school bell. As the class got up to leave, I watched as Mr Graye strode to Ayala’s desk. He put a bony hand on her isolated worksheet then in his pocket, and it returned with a stamp. With unnecessary force, he stamped her empty page with an A stamp, about 8cm long... The hum of high-school life was loud, but I could’ve sworn he whispered ‘a warning’ into her left ear. The one scarred for life by the burn-mark. "
@@ -135,7 +127,11 @@
         "summary": "Tap. Tap. Tap. It came from below... ",
         "author": "Osaka Bin",
         "tags": [
-            "Murder-Thriller-Tense-Death-Monster "
+            "Murder",
+            "Thriller",
+            "Tense",
+            "Death",
+            "Monster "
         ],
         "id": "brothersinarms",
         "content": "Tap. Tap. Tap. It scuttles, chasing. Slap. Slap. Slap. His bare feet pounded the corridor floor as his deep breaths forced his rib cage out, before letting it collapse again. Silence. He searched the hallway, empty, had it left him? Or was it toying with its food? Tap. Tap. Tap.He awoke, jerking straight up his head almost hitting the bunk above him. The muffled breaths of his brother, in the bunk above, just heard over the deafening silence that filled the house. He clambered up and out of the silk sheets that cocooned his body. He gently made his way down the stairs careful not to hit the creeks and eeks hiding under the carpet. He glanced down the hallway clear as it was every night, the gentle tap of dripping water sounded. Tap. Tap. Tap. Coming from the kitchen. He shivered. Tap. Tap. Reaching the kitchen he turned off the tap but the noise continued, it came from; below? He crouched resting his ruffled hair against the bare boards. There. He heard it again. Tap. Tap. Tap. He reached into the corner cupboard where his dad stores his tools reaching for a crowbar. He prayed away the floorboards from their dormant position. He peers in, eyes adjusting to the darkness below, he never knew there was a basement in this house. Tap. Tap. Tap. This time it’s louder almost inside his head. There! A black shadow scuttles out of view. He jerks back away from the hole and begins sprinting down the hallway.Tap. Tap. Tap. It scuttles, chasing. Slap. Slap. Slap. His bare feet pounded the corridor floor as his deep breaths forced his rib cage out, before letting it collapse again. Silence. He searched the hallway, empty, had it left him? Or was it toying with its food? Tap. Tap. Tap. He wakes and checks the bunk below, empty? Tap. Tap. Maybe he went for his paper round early. Tap. What is that? Tap. He heads downstairs. Tap. Tap. As he reaches further down the stairs he is able to see more. First a puddle of red, next 2 hanging feet, finally his brothers body swinging from a rope. What he didn’t see or hear was the black shadow above him or it jumping from the roof down towards. Neither did the police find them or hear the slow rhythmic, Tap. Tap. Tap. "
@@ -158,8 +154,7 @@
         "author": "Tom Bland",
         "tags": [
             "Kidnap",
-            "Mask",
-            " "
+            "Mask"
         ],
         "id": "maskedman",
         "content": "That familiar tone of my phone alarm rang through loud and clear, just as it always does, jolting me from my deep sleep. After awaking, my eyelids droop and my eyes glint under the harsh, naked bulb dangling from the unrecognisable ceiling. I look to my left and something is wrong. The windows to this room are barred, the iron wrought and twisted like a withered arm, this room isn’t even one I recognise. I run to the door, pounding and pulling, but it is locked from the outside. I attempt to kick it down but the rough oak holds strong. I check the windows, grasping at the shattered glass and splintered frame just past the bars, the fresh air rushing in, teasing the idea of escape. The light begins to flicker, the bulb swaying back and forth, back and forth, and as I begin to shout for help the bulb dies, and the light fades away as the filament glows from the heat, leaving an ominous orange smoulder. The door slams open and a masked figure grabs me, shoving me in the back of a 4x4 with a bag over my head and a zip tie around my wrists.The car engine shudders as it comes to a stop, the tyres squealing on the freshly layed tarmac. The masked man grabs me from the torn leather seat and throws me into the centre of a group of men, women and children, all in the same masks as the one who brought me before them, stood swaying in the wind, unblinking, their pupils darting between myself and one another. They amble closer, blocking out the embers of the waning fire behind them."
@@ -167,12 +162,11 @@
     {
         "title": "Live by the Sword, Die by the Sword",
         "summary": "James is a schoolboy who loves drama, he has a big show coming up and has to decide what to do.",
-        "author": "Tom Owen ",
+        "author": "Tom Owen",
         "tags": [
             "Murder",
             "death",
-            "thriller",
-            " "
+            "thriller"
         ],
         "id": "livebythesworddiebythesword",
         "content": "James walked slowly into school. As usual, history felt like it took five years and music was boring. He headed over to the Hall, it was five hours until the first show. They practiced and practiced and practiced, until he felt as if he wanted to fall on his sword. His understudy took over, practicing and practicing until he too wanted to fall on his sword. James stumbled over to the water machine and drank 3 cups instantly. As he began his fourth he admired the gleaming Kodachi (a Japanese sword for the final show). It was sharp to touch and perfectly reflected beams of sunlight onto the opposite wall. This was his show, he would use it to surprise the audience as well as the cast. He returned to his lessons. He was a very clever student, all As in fact. He knew nothing but to try his best. It didn’t seem surprising that he was the star of the performance. At lunch he returned to the hall. He practiced and practiced again. As usual he inspected the Kodachi. The night of the first show came and went. As did the second and the third. On the fourth he forgot one line and was laughed at by the entire audience. He was ill for the fifth and sixth.The finale. Smoke rose around the stage creating an eerie atmosphere. The show started, he spoke his lines clearly and didn’t make the slightest mistake. At the interval he saw his parents. They went back to their seats. The majestic curtains started to open. The audience screamed. There it was, in the centre of the stage. The shiny gleaming sword had claimed its first victim, the understudy started to perform, unaware of the dead boy behind him."
@@ -182,7 +176,11 @@
         "summary": "Someone's been kidnapped. How, why and where is she?",
         "author": "Lucy Rees",
         "tags": [
-            "Kidnap-Drama-Emotion-Mystery-Dark"
+            "Kidnap",
+            "Drama",
+            "Emotion",
+            "Mystery",
+            "Dark"
         ],
         "id": "bribe",
         "content": "Left. Right. Straight on. Two lefts. Third exit. 3 rights. Straight on for around 5 minutes. First exit. Left. Left again. Right. I’m not going insane. I will not go insane. These voices aren’t here. The voices aren’t real. It’s his mind games. He wants this. I am not going insane.The van door slams, echoing into oblivion with the sounds ricocheting into desolation. Specks of light barely force their way to my eyes, weaving through the black material strung along my head. My wrists are raw and sore, so burnt by the rope that my eyes try and release a trickle of water like liquid from a tap. However I won’t let it. The flood barriers stand tall and stable, a block for my sadness being seen. I look a mess. A bird's nest is balanced on my head like an ungraceful gymnast clinging onto a beam. My clothes hang limp and ragged after being torn to shreds by the constant violent actions committed to my limbs. After experiencing being dragged across the gravel like a mop to the floor, my skeleton is forced into a chair and the blindfold ripped from my head. Everything is black. The noise of children crying surrounds my mind and engulfs my emotions as the constant reminder of how helpless I am fills my thoughts. I have to distract myself, so I think of my mother. I think of how scared she must be. Is she looking for me? She won’t find me. Her face fills my vision, tears dripping down her nose, worry her only thought as she experiences such depression flowing through her body. I wander if she’ll blame herself for my disappearance. It’s not her fault. I had to do what was right so I took the bribe. And now I am stuck here forever. "
@@ -197,5 +195,28 @@
         ],
         "id": "trampoline",
         "content": "It was unusually quiet on the street tonight.Usually, there’s always a raucous riot from the middle house of the short terrace of three opposite. In an otherwise sleepy village, such disturbance was sure to attract snide comments, from especially their immediate neighbours: the Antonios, only recently moved into the dilapidated house on the left by the council, and the young couple on the right, running their butchers’ in the nearby market town.On the day of their arrival, the new occupants caused some stifled outrage by uprooting the ancient yew hedges bordering theirs and their neighbours’ houses. They went on to tarmac the front lawn and put a trampoline in it. The five children, ranging between 3 and 10, were constantly seen on it, fighting, screaming and occasionally shouting obscenities to the ever decreasing passers-by.For the house to be so lifeless was unusual.Full moon, and the air was as still as if scared stiff of some invisible predator.The villagers began to gather outside the eerily quiet house: one by one or in small groups as if pulled by some unstoppable gravity. Soon, everyone was on the street – except the Antonios and the butchers.The witnesses were confronted with a grisly carnage when they finally kicked the front door in. The sickly yellow moonlight sliced in the hallway.The youngest first, then the four-year-old, the most foul-mouthed one next, the twins completed the circle – hand-in-hand, crossed-legged, around the blood-soaked trampoline. Inside, a heap of dismembered bodies were found. . . .Nobody ever go near that short terrace of three after that night, the night when the yellow moonlight crept on the trampoline."
+    }, {
+        "title": "The Death of Tom",
+        "summary": "Tom is killed.",
+        "author": "Edmund Jagger",
+        "tags": [
+            "murder",
+            "cats"
+        ], 
+        "id": "thedeathoftom",
+        "content": "As the bright summer’s day turned to a gloomy night, the busy streets and roads quietened and the energetic country became tired. Tom was returning to his home through the deserted alleyways. They were completely empty apart from the occasional bike, rubbish bin or cheap, broken-down car.\n\nThe day so far had gone like any other normal Saturday. He went into the shop at 8am, worked till 9pm and then spent the rest of his evening in the pub with his friends, drinking and chatting the night away. However there was one difference from other Saturdays, in that he overspent and could not afford a taxi. He had taken his car but he found himself too drunk to get in to it. So without a second thought, he got on his way, and started to walk home. As he walked, he remembered that he had promised his wife that he would be home by eleven. So he decided to rush and take shortcuts through alleyways. \n\nHe did not realise that this decision would end his life.\n\nEntering a damp narrow alley, he heard a glass-shattering hiss as a small shadow sprinted past. He realised that this shadow was a cat, black as night. Then looming ominously behind it came a much bigger shadow, moving slowly towards him. He felt a shock of dread and fear and started to run but in his drunken state he toppled over and heard a crack in his leg as he hit the floor. He attempted to scramble in pain as the figure became nearer and clearer. “What are you doing here? What do you want with me this time?” Tom shrieked before he faded out of consciousness as the first blow struck him."
+    }, {
+        "title": "Undercover",
+        "summary": "An undercover mission. In the Mafia. It’s going smoothly so far. Too smoothly.",
+        "author": "Emma M",
+        "tags": [
+            "Murder",
+            "Police",
+            "Thriller",
+            "Mafia",
+            "Detective"
+        ],
+        "id": "undercover",
+        "content": "He was blanketed by darkness. His feet trod lightly across they sand as his hand gripped a small pistol deep in the pockets of a trench coat. The waves crashed onto the beach so loud that he couldn’t hear the footsteps behind him. So he continued, a rhythmical, robotic walk but he was paranoid. Completely paranoid. His hands were shaking in his pockets and a bead of sweat slowly ran down his forehead. He kept telling himself that he had a gun, he was prepared, it would all be fine, why would anyone follow him? How would they know? But this did nothing to comfort him. Nothing.\n\nHis head was spinning but he he still had to focus on the case, he didn’t that they knew. So he had to keep going, keep pushing for more information or they’d never go down.\n\nThere were still footsteps, but still he could not hear them for the violent water was constantly crashing down onto the golden sand. So he carried on walking, continued to think of every single possibility in his head. A knife, a club, a gun? He shivered as he realised it would probably be much worse than that. After 6 and a half months he’d discovered how twisted and cruel these people were. They had no sympathy, no empathy. They could kill a child without giving it any thought. They’d torture him for hours, days, weeks even. There was no chance whatsoever they’d waste the opportunity, that they’d let him go.\n\nHis heart skipped a beat.\n\nAll he glimpsed was a movement behind him, but somehow he knew. He knew they were there for him. To kill him.\n\n“Sergeant.”\n\nHe gulped.\n\nA masked face stepped out in front of him. A noose slung over his shoulder.\n\nThat was the last thing he ever saw."
     }
 ]
