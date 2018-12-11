@@ -45,9 +45,9 @@
 .search-result {
     color: white;
     position: relative;
-    height: 2em;
+    height: 3em;
     margin: 0.5em auto;
-    padding: 1.5em 0;
+    padding: 1em 0;
 
     cursor: pointer;
     width: 70%;

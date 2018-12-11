@@ -44,7 +44,7 @@ search.addEventListener('focus', function(event) {
     update();
 
     document.querySelector('#publish').css('opacity', '0');
-    document.querySelector('#random').css('opacity', '0');
+    document.querySelector('#all').css('opacity', '0');
 });
 
 search.addEventListener('blur', function() {
@@ -55,7 +55,7 @@ search.addEventListener('blur', function() {
     searchResults.classList.remove('active');
 
     document.querySelector('#publish').css('opacity', '1');
-    document.querySelector('#random').css('opacity', '1');
+    document.querySelector('#all').css('opacity', '1');
 });
 
 search.addEventListener('input', update);
