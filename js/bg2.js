@@ -119,7 +119,7 @@ class Background {
 
         this.squareSize = new Point(150, 150);
 
-        this.base = Color.fromString(localStorage.theme);
+        this.base = Color.fromString(localStorage.theme || 'rgb(231, 76, 60)');
 
         const lines = [];
         for (let i = 0; i < (this.canvas.height / this.squareSize.y) + 2; i++) {
