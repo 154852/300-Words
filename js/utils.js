@@ -252,7 +252,7 @@ String.prototype.replaceRegex = function(regex, replacement) {
 }
 
 Utils.MDtoHTML = function(string) {
-    string = string.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\\t/g, '    ');
+    string = string.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\\t/g, '');
 
     string = string.replaceRegex(/\/([^ ][^\/]*[^ ])\//g, '<em>$1</em>');
     string = string.replaceRegex(/\*([^ ][^*]*[^ ])\*/g, '<b>$1</b>');
