@@ -37,7 +37,7 @@ body {
 
 #author {
     text-align: right;
-    color: var(--theme);
+    color: rgb(231, 76, 60);
 }
 
 #main h1 {
@@ -51,14 +51,14 @@ li {
 
 li::before {
     content: '\2022';
-    color: var(--theme);
+    color: rgb(231, 76, 60);
     font-weight: 500;
     padding-right: 0.7em;
 }
 
 #main a {
     display: inline;
-    color: var(--theme);
+    color: rgb(231, 76, 60);
     font-weight: 500;
 
     transition: 0.5s;

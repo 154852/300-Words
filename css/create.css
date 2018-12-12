@@ -18,7 +18,7 @@ html, body {
     height: 95%;
     display: block;
     background-color: white;
-    box-shadow: var(--theme) 0 0 1px 1px;
+    box-shadow: rgb(231, 76, 60) 0 0 1px 1px;
     width: 86vw;
     margin: 0 7vw;
 
@@ -43,7 +43,7 @@ html, body {
 
 .card a {
     display: inline;
-    color: var(--theme);
+    color: rgb(231, 76, 60);
     font-weight: 500;
     text-decoration: none;
 
@@ -103,7 +103,7 @@ html, body {
     width: 2em;
     height: 2em;
 
-    background-color: var(--theme);
+    background-color: rgb(231, 76, 60);
     border-radius: 50%;
 
     z-index: 50;
